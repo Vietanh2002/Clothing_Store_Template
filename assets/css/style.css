@@ -1,0 +1,539 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0px;
+}
+
+p {
+	margin: 15px 0px;
+}
+
+/* ========== Main ========== */
+
+#main {
+	display: flex;
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+#main #main-left1 {
+	width: 20%;
+}
+
+#main #main-right {
+	width: 80%;
+}
+
+	/* ========== Main - left ========== */
+#main-left1 {
+	position: fixed;
+}
+
+#main-left2 {
+	display: none;
+}
+
+#header-left .header--title {
+	padding: 16px;
+	font-size: 15px;
+}
+
+#header-left .header--title h3 b {
+	font-size: 24px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+#header-left .header--title h3 b:hover {
+	cursor: pointer;
+	color: blue;
+}
+
+#main-left1 .product-name__list {
+	font-size: 18px;
+	padding: 64px 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+#main-left1 .product-name__list a {
+	padding: 8px 16px;
+	font-size: 18px;
+	font-family: Roboto,sans-serif;
+	color: #757575;
+}
+
+#main-left1 .product-name__list a:hover {
+	color: #fff;
+	background: lightblue;
+}
+
+#main-left1 .interactive-list {
+	display: flex;
+	flex-direction: column;
+}
+
+#main-left1 .interactive-list a {
+	padding: 8px 16px;
+	font-size: 18px;
+	font-family: Roboto,sans-serif;
+	color: #757575;
+}
+
+#main-left1 .interactive-list a:hover {
+	color: #fff;
+	background: lightblue;
+}
+
+	/* ========== Main - right ========== */
+#main-right {
+	margin-left: 20%;
+}
+
+		/* ========== Header - right ========== */
+
+#main-right #header-right {
+	display: flex;
+	justify-content: space-between;
+	font-size: 24px;
+	padding: 0px 16px;
+}
+
+#main-right #header-right p {
+	font-size: 24px;
+	margin: 24px 0px;
+	letter-spacing: 5px;
+}
+
+#main-right #header-right i {
+	margin: 0px 10px;
+}
+
+#main-right #header-right i:hover {
+	cursor: pointer;
+	color: blue;
+}
+		/* ========== Slider ========== */
+
+#slider {
+	position: relative;
+	padding: 0px 16px;
+}
+
+#slider img {
+	width: 100%;
+	display: block;
+}
+
+#slider .slider-text {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 24px 48px;
+	font-size: 1.8rem;
+}
+
+#slider .slider-text h1 {
+	font-size: 64px;
+	color: #fff;
+	font-weight: 400;
+}
+
+#slider .slider-text h2 {
+	font-size: 36px;
+	color: #fff;
+}
+
+#slider .slider-text a {
+	padding: 12px 24px;
+	font-size: 18px;
+	background: #757575;
+	color: #000;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+
+#slider .slider-text a:hover {
+	color: #fff;
+	background: lightblue;
+}
+
+		/* ========== Container ========== */
+
+			/* ========== Product-lists ========== */
+
+#container .content-product .number-of-products {
+	padding: 0px 16px;
+}
+
+#container .product-list {
+	display: flex;
+	width: 100%;
+	filter: grayscale(65%);
+}
+
+#container .info-product {
+	width: 25%;
+	padding: 0px 16px;
+	font-size: 15px;
+}
+
+#container .info-product img {
+	width: 100%;
+	display: block;
+}
+
+#container .info-product:hover img {
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
+
+#container .info-product .new {
+	position: relative;
+}
+
+#container .info-product .new span {
+	position: absolute;
+	background: blue;
+	color: #fff;
+	top: 0px;
+	left: 0px;
+	padding: 0px 8px;
+}
+
+#container .info-product:hover span {
+	transform: scale(1.6);
+	transition-duration: 1s;
+	font-size: 10px;
+}
+
+#container .info-product .new button {
+	padding: 10px 3px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	border: none;
+	font-size: 16px;
+}
+
+#container .info-product .new .new__button {
+	display: none;
+}
+
+#container .new:hover .new__button {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition-duration: 1s;
+}
+
+#container .info-product .new button:hover {
+	background: #ccc;
+	color: #000;
+	cursor: pointer;
+}
+
+#container .info-product .sale {
+	position: relative;
+}
+
+#container .info-product .sale span {
+	position: absolute;
+	background: blue;
+	color: #fff;
+	top: 0px;
+	left: 0px;
+	padding: 0px 8px;
+}
+
+#container .info-product:hover span {
+	transform: scale(1.6);
+	transition-duration: 1s;
+	font-size: 10px;
+}
+
+#container .info-product .sale button {
+	padding: 10px 3px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	border: none;
+	font-size: 16px;
+}
+
+#container .info-product .sale .sale__button {
+	display: none;
+}
+
+#container .sale:hover .sale__button {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition-duration: 1s;
+}
+
+#container .info-product .sale button:hover {
+	background: #ccc;
+	color: #000;
+}
+
+#container .info-product .cost-sale {
+	color: red;
+}
+
+			/* ========== Subscribe ========== */
+#container .content-subscribe {
+	background: #000;
+	color: #fff;
+	padding: 32px 16px;
+}
+
+#container .content-subscribe h1 {
+	font-size: 36px;
+	letter-spacing: 5px;
+}
+
+#container .content-subscribe p {
+	font-size: 15px;
+}
+
+#container .content-subscribe input {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	margin-bottom: 16px;
+	border-radius: 5px;
+}
+
+#container .content-subscribe button {
+	padding: 8px 16px;
+	background: red;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+
+#container .content-subscribe button:hover {
+	background: lightblue;
+	cursor: pointer;
+}
+
+		/* ========== Footer ========== */
+
+#footer {
+	background: #f1f1f1;
+	padding: 64px 0px;
+	font-size: 12px;
+	display: flex;
+}
+
+#footer .footer-child {
+	width: 35%;
+	padding: 0px 16px;
+}
+
+#footer h4 {
+	font-size: 20px;
+	letter-spacing: 4px;
+}
+
+#footer p {
+	font-size: 12px;
+}
+
+#footer a {
+	color: #000;
+	text-decoration: underline;
+}
+
+
+			/* ========== Contact ========== */
+
+#footer .footer__contact {
+	text-align: center;
+}
+
+#footer .footer__contact input {
+	width: 100%;
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border: none;
+	margin-bottom: 16px;
+	border-radius: 5px;
+}
+
+#footer .footer__contact button {
+	padding: 8px 16px;
+	background: #000;
+	font-size: 12px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+}
+
+#footer .footer__contact button:hover {
+	background: lightblue;
+	cursor: pointer;
+}
+
+			/* ========== About ========== */
+
+#footer .footer__about {
+	text-align: center;
+}
+
+			/* ========== Store ========== */
+
+#footer .footer__store p {
+	font-size: 14px;
+}
+
+#footer .footer__store i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+		/* ========== The end ========== */
+
+#the-end {
+	padding: 24px 0px;
+	font-size: 16px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+
+#the-end a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* =========== Responsive =========== */
+
+
+@media screen and (max-width: 992px) {
+
+	#main {
+		flex-wrap: wrap;
+	}
+
+	#main #main-left1 {
+		display: none;
+	}
+
+	#main #main-left2 {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #000;
+		position: fixed;
+		top: 0px;
+		z-index: 1;
+	}
+
+	#main-left2 h3 b {
+		padding: 24px 16px;
+		font-size: 24px;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	#main-left2 a {
+		padding: 24px 16px;
+		color:  #fff;
+		font-size: 25px;
+	}
+
+	#main #main-right {
+		width: 100%;
+		margin-left: 0px;
+		margin-top: 85px;
+		transition: margin-left 0.5s;
+	}
+
+	#container .product-list {
+		flex-wrap: wrap;
+	}
+
+	#container .info-product {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	#footer {
+		flex-wrap: wrap;
+	}
+
+	#footer .footer-child {
+		width: 100%;
+	}
+
+	#slider .slider-text h1 {
+		font-size: 36px;
+		letter-spacing: 2px;
+	}
+
+	#slider .slider-text h2 {
+		display:none	
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#container .product-list {
+		flex-wrap: wrap;
+	}
+
+	#container .info-product {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
