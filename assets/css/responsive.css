@@ -1,0 +1,106 @@
+/* =========== Responsive =========== */
+
+@media screen and (max-width: 992px) {
+
+	#main {
+		flex-wrap: wrap;
+	}
+
+	#main .main__large {
+      display: none;
+	}
+
+   #main .main__close {
+      display: block;
+   }
+
+	#main .main__small {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #000;
+		position: fixed;
+		top: 0px;
+		z-index: 1;
+	}
+
+	.main__small h3 b {
+		padding: 24px 16px;
+		font-size: 24px;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	.main__small a {
+		padding: 24px 16px;
+		color:  #fff;
+		font-size: 25px;
+	}
+
+	#main #main-right {
+		width: 100%;
+		margin-left: 0px;
+		margin-top: 85px;
+		transition: margin-left 0.5s;
+	}
+
+	#container .product__list {
+		flex-wrap: wrap;
+	}
+
+	#container .info-product {
+		width: 50%;
+	}
+
+   .modal__content {
+      max-width: 600px;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+
+   .modal__subscribe{
+      padding-top: 50px;
+   }
+
+   .modal__content {
+      max-width: 500px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+	#footer {
+		flex-wrap: wrap;
+	}
+
+	#footer .footer-child {
+		width: 100%;
+	}
+
+	#slider .slider-text h1 {
+		font-size: 36px;
+		letter-spacing: 2px;
+	}
+
+	#slider .slider-text h2 {
+		display:none
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#container .product__list {
+		flex-wrap: wrap;
+	}
+
+	#container .info-product {
+		width: 100%;
+	}
+
+   .modal__content {
+      margin: 0px 10px;
+      width: auto;
+   }
+}

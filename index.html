@@ -4,51 +4,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+	<link rel="shortcut icon" href="./assets/image/jeans.jpeg" type="image/x-icon">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	<title>Clothing Store Template</title>
 </head>
 <body>
 	<div id="main">
-		<div id="main-left1">
+
+		<div id="main-large" class="main__large">
+			<a href="#" class="main__close">
+				<i class="uil uil-multiply"></i>
+			</a>
 			<div id="header-left">
 				<div class="header--title">
-					<h3>
-						<b>logo</b>
-					</h3>
-
+					<h3><b>logo</b></h3>
 				</div>
-
 			</div>
 
 			<div class="product-name__list">
-				<a href="#">Shirts</a>
-				<a href="#">Dresses</a>
-				<a href="#">Jeans
-					<i class="uil uil-angle-double-down"></i>
+				<a href="#" class="product__link">Shirts</a>
+				<a href="#" class="product__link">Dresses</a>
+				<a href="#" class="product__link" id="link__child" onclick="openListChild('child__link')">Jeans
+					<i class="uil uil-angle-down"></i>
 				</a>
-				<a href="#">Jackets</a>
-				<a href="#">Gymwear</a>
-				<a href="#">Blazers</a>
-				<a href="#">Shoes</a>
+				<div class="product__list-child" id="child__link">
+					<a href="#" class="product__link">
+						<i class="uil uil-angle-right-b"></i> Skinny
+					</a>
+					<a href="#" class="product__link">Relaxed</a>
+					<a href="#" class="product__link">Bootcut</a>
+					<a href="#" class="product__link">Straight</a>
+				</div>
+				<a href="#" class="product__link">Jackets</a>
+				<a href="#" class="product__link">Gymwear</a>
+				<a href="#" class="product__link">Blazers</a>
+				<a href="#" class="product__link">Shoes</a>
 			</div>
 
 			<div class="interactive-list">
-				<a href="#">Contact</a>
-				<a href="#">Newsletter</a>
+				<a href="#footer">Contact</a>
+				<a href="#" class="modal__toggle">Newsletter</a>
 				<a href="#">Subcribe</a>
 			</div>
-
 		</div>
 
-		<div id="main-left2">
+		<div id="main-small" class="main__small">
 			<h3>
 				<b>logo</b>
 			</h3>
-			<a href="#">
+			<a href="#" class="main__toggle">
 				<i class="uil uil-align-justify"></i>
 			</a>
 		</div>
-
 		<div id="main-right">
 			<div id="header-right">
 				<p class="product-name">Jeans</p>
@@ -57,24 +65,20 @@
 					<i class="uil uil-search"></i>
 				</p>
 			</div>
-
 			<!-- Slider -->
-
 			<div id="slider">
 				<img src="./assets/image/jeans.jpeg" alt="">
 				<div class="slider-text">
 					<h1>New arrivals</h1>
 					<h2>COLLECTION 2021</h2>
-					<a href="#">Shop Now</a>
+					<a href="#product">Shop Now</a>
 				</div>
 			</div>
-
 			<!-- Container -->
-
 			<div id="container">
-				<div class="content-product">
+				<div class="content-product" id="product">
 					<p class="number-of-products">8 items</p>
-					<div class="product-list">
+					<div class="product__list">
 						<div class="info-product">
 							<img src="./assets/image/jeans1.jpeg" alt="">
 							<p>Ripped Skinny Jeans
@@ -82,7 +86,6 @@
 								<b>$24.99</b>
 							</p>
 						</div>
-
 						<div class="info-product">
 							<div class="new">
 								<img src="./assets/image/jeans2.jpeg" alt="">
@@ -92,14 +95,12 @@
 										Buy now <i class="uil uil-shopping-cart"></i>
 									</button>
 								</div>
-								
 							</div>
 							<p>Mega Ripped Jeans
 								<br>
-								<b>$19.99</b> 
+								<b>$19.99</b>
 							</p>
 						</div>
-
 						<div class="info-product">
 							<img src="./assets/image/jeans3.jpeg" alt="">
 							<p>Washed Skinny Jeans
@@ -107,25 +108,22 @@
 								<b>$20.50</b>
 							</p>
 						</div>
-
 						<div class="info-product">
 							<img src="./assets/image/jeans4.jpeg" alt="">
-							<p>Vintage Skinny Jeans 
+							<p>Vintage Skinny Jeans
 								<br>
 								<b>$14.99</b>
 							</p>
 						</div>
 					</div>
-
-					<div class="product-list">
-						<div class="info-product">	
+					<div class="product__list">
+						<div class="info-product">
 							<img src="./assets/image/jeans2.jpeg" alt="">
 							<p>Mega Ripped Jeans
 								<br>
-								<b>$19.99</b> 
+								<b>$19.99</b>
 							</p>
 						</div>
-
 						<div class="info-product">
 							<img src="./assets/image/jeans3.jpeg" alt="">
 							<p>Washed Skinny Jeans
@@ -133,7 +131,6 @@
 								<b>$20.50</b>
 							</p>
 						</div>
-
 						<div class="info-product">
 							<div class="sale">
 								<img src="./assets/image/jeans4.jpeg" alt="">
@@ -144,12 +141,11 @@
 									</button>
 								</div>
 							</div>
-							<p>Vintage Skinny Jeans 
+							<p>Vintage Skinny Jeans
 								<br>
 								<b class="cost-sale">$14.99</b>
 							</p>
 						</div>
-
 						<div class="info-product">
 							<img src="./assets/image/jeans1.jpeg" alt="">
 							<p>Ripped Skinny Jeans
@@ -158,20 +154,15 @@
 							</p>
 						</div>
 					</div>
-				
 				</div>
-
 				<div class="content-subscribe">
 					<h1>Subscribe</h1>
 					<p>To get special offers and VIP treatment:</p>
 					<input type="text" placeholder="Enter e-mail">
 					<button>Subscribe</button>
 				</div>
-				
 			</div>
-
 			<!-- Footer -->
-
 			<div id="footer">
 				<div class="footer__contact footer-child">
 					<h4>Contact</h4>
@@ -181,70 +172,36 @@
 						<input type="text" placeholder="Email">
 						<input type="text" placeholder="Subject">
 						<input type="text" placeholder="Message">
-						<button>Send</button>	
+						<button>Send</button>
 					</form>
 				</div>
-
 				<div class="footer__about footer-child">
 					<h4>About</h4>
-					<p>
-						<a href="#">About us</a>
-					</p>
-
-					<p>
-						<a href="#">We're hiring</a>
-					</p>
-
-					<p>
-						<a href="#">Support</a>
-					</p>
-
-					<p>
-						<a href="#">Find store</a>
-					</p>
-
-					<p>
-						<a href="#">Shipment</a>
-					</p>
-
-					<p>
-						<a href="#">Payment</a>
-					</p>
-
-					<p>
-						<a href="#">Gift card</a>
-					</p>
-
-					<p>
-						<a href="#">Return</a>
-					</p>
-
-					<p>
-						<a href="#">Help</a>
-					</p>
+					<p><a href="#">About us</a></p>
+					<p><a href="#">We're hiring</a></p>
+					<p><a href="#">Support</a></p>
+					<p><a href="#">Find store</a></p>
+					<p><a href="#">Shipment</a></p>
+					<p><a href="#">Payment</a></p>
+					<p><a href="#">Gift card</a></p>
+					<p><a href="#">Return</a></p>
+					<p><a href="#">Help</a></p>
 				</div>
-
 				<div class="footer__store footer-child">
 					<h4>Store</h4>
-
 					<p>
 						<i class="uil uil-map-marker"></i> Company Name
 					</p>
-
 					<p>
 						<i class="uil uil-phone"></i> 0044123123
 					</p>
-
 					<p>
 						<i class="uil uil-envelope"></i> ex@mail.com
 					</p>
-
 					<h4>We accept</h4>
-
 					<p>
 						<i class="uil uil-credit-card"></i> Credit Card
 					</p>
-
 					<p>
 						<i class="uil uil-facebook"></i>
 						<i class="uil uil-instagram"></i>
@@ -255,11 +212,25 @@
 				</div>
 			</div>
 
+			<div class="modal__subscribe" id="modal-subscribe">
+				<div class="modal__content">
+					<div class="modal__container">
+						<a href="#" class="modal__close">
+							<i class="uil uil-multiply"></i>
+						</a>
+						<h2 class="modal__title">NEWSLETTER</h2>
+						<p class="modal__description">Join our mailing list to receive updates on new arrivals and special offers.</p>
+						<input type="email" class="modal__input" placeholder="Enter e-mail">
+						<button class="btn btn__modal">Subscribe</button>
+					</div>
+				</div>
+			</div>
 			<div id="the-end">
 				Powered by <a href="https://www.facebook.com/vietanh.le.77985741">Viet Anh Le</a>
 			</div>
-
 		</div>
-	</div>								
+	</div>
+
+	<script src="./assets/js/main.js"></script>
 </body>
 </html>
